@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center min-h-screen bg-gray-200 dark:bg-gray-700">
+        <div class="fixed top-0 left-0 w-full h-14 bg-white dark:bg-gray-800 flex items-center justify-between shadow-md px-4">
+            <div class="flex items-center">
+                <a href="https://tensoract.io/">
+                    <img src="https://tensoract.io/images/logo-light.svg" alt="logo" class="w-30 h-8">
+                </a>
+            </div>
+            <ul class="hidden md:flex items-center space-x-4">
+                <li><a href="#" class="text-gray-800 dark:text-gray-200 hover:underline">Home</a></li>
+                <li class="relative group">
+                    <a href="#" class="text-gray-800 dark:text-gray-200 hover:underline">Product</a>
+                    <div class="absolute hidden group-hover:flex flex-col bg-gray-200 dark:bg-gray-800 rounded shadow-md mt-1">
+                        <a href="#" class="py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Link 1</a>
+                        <a href="#" class="py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Link 2</a>
+                        <a href="#" class="py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="#" class="text-gray-800 dark:text-gray-200 hover:underline">Blogs</a></li>
+                <li><a href="#" class="text-gray-800 dark:text-gray-200 hover:underline">About Us</a></li>
+                <li><a href="#" class="text-gray-800 dark:text-gray-200 hover:underline">Contact</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center">
+                    <input type="checkbox" id="checkbox" class="hidden">
+                    <label for="checkbox" class="relative w-10 h-5 bg-gray-400 rounded-full flex items-center cursor-pointer">
+                        <i class="fas fa-moon text-yellow-500 ml-2"></i>
+                        <i class="fas fa-sun text-gray-800 mr-2"></i>
+                        <span class="absolute w-4 h-4 bg-white rounded-full transform transition-transform duration-300 translate-x-full"></span>
+                    </label>
+                </div>
+                <div class="block md:hidden">
+                    <div class="cursor-pointer flex flex-col justify-between w-8 h-6">
+                        <span class="block h-1 bg-gray-800 dark:bg-gray-200"></span>
+                        <span class="block h-1 bg-gray-800 dark:bg-gray-200"></span>
+                        <span class="block h-1 bg-gray-800 dark:bg-gray-200"></span>
+                    </div>
+                    <ul class="absolute hidden bg-white dark:bg-gray-800 right-0 mt-2 w-40 rounded shadow-md">
+                        <li><a href="#" class="block py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Home</a></li>
+                        <li class="relative group">
+                            <a href="#" class="block py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Product</a>
+                            <div class="hidden group-hover:flex flex-col bg-gray-200 dark:bg-gray-800 rounded shadow-md mt-1">
+                                <a href="#" class="py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Link 1</a>
+                                <a href="#" class="py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Link 2</a>
+                                <a href="#" class="py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Link 3</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="block py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Blogs</a></li>
+                        <li><a href="#" class="block py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">About Us</a></li>
+                        <li><a href="#" class="block py-2 px-4 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 w-96 mt-14">
+            <p class="text-2xl text-center mb-6 text-gray-800 dark:text-white">Sign In</p>
+            <div class="mb-6">
+                <input type="text" placeholder="Email or Phone Number" class="w-full p-2 border-2 rounded-lg focus:outline-none focus:border-blue-500 dark:bg-gray-600 dark:text-gray-300">
+                <div class="text-red-500 text-sm mt-1 hidden">Error</div>
+            </div>
+            <div class="mb-6">
+                <input type="password" placeholder="Password" class="w-full p-2 border-2 rounded-lg focus:outline-none focus:border-blue-500 dark:bg-gray-600 dark:text-gray-300">
+                <div class="text-red-500 text-sm mt-1 hidden">Error</div>
+            </div>  
+            <a href="#" class="text-blue-500 dark:text-blue-300 text-sm mb-6 block text-right hover:underline">Forgot password?</a>
+            <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none">Sign In</button>
+        </div>
+        <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8 w-96">
+                <span class="absolute top-2 right-4 text-gray-400 text-2xl cursor-pointer">&times;</span>
+                <p class="text-center text-gray-800 dark:text-gray-200">Enter your email or phone number to reset password</p>
+                <div class="mt-4">
+                    <input type="text" placeholder="Email or Phone Number" class="w-full p-2 border-2 rounded-lg focus:outline-none focus:border-blue-500 dark:bg-gray-600 dark:text-gray-300">
+                    <div class="text-red-500 text-sm mt-1 hidden">Error</div>
+                </div>
+                <button class="w-full bg-blue-500 text-white py-2 mt-6 rounded-lg hover:bg-blue-600 focus:outline-none">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

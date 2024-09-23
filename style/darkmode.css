@@ -1,0 +1,123 @@
+:root {
+    --loginpage-background:  rgb(239, 239, 239);
+    --loginpannel-background: rgb(255, 255, 255);
+    --inputerror-color: rgb(255, 0, 0);
+    --formbutton-color: rgb(44, 145, 254);
+    --formbutton-color-hover: rgb(44, 145, 254); 
+    --formbutton-color-active: rgb(28, 121, 252);
+    --forgotpassword-color: rgb(0, 106, 255);
+
+    --navbar-color: rgb(0, 0, 0);
+    --navbar-background: rgb(255, 255, 255);
+    --navbar-background-hover: rgb(230, 230, 230);
+    --subitem-background: rgb(239, 239, 239);
+    --subitem-background-hover: rgb(206, 206, 206);
+
+    --loginpage-background-darkmode:  rgb(116, 116, 116);
+    --loginpannel-background-darkmode: rgb(74, 74, 74);
+    --inputerror-color-darkmode: rgb(255, 0, 0);
+    --formbutton-color-darkmode: rgb(44, 145, 254);
+    --formbutton-color-hover-darkmode: rgb(44, 145, 254); 
+    --formbutton-color-active-darkmode: rgb(28, 121, 252);
+    --forgotpassword-color-darkmode: rgb(0, 106, 255);
+
+    --navbar-color-darkmode: rgb(237, 237, 237);
+    --navbar-background-darkmode: rgb(71, 71, 71);
+    --navbar-background-hover-darkmode: rgb(171, 171, 171);
+    --subitem-color-darkmode: rgb(0, 0, 0);
+    --subitem-background-darkmode: rgb(239, 239, 239);
+    --subitem-background-hover-darkmode: rgb(206, 206, 206);
+}
+
+
+
+.login-page.dark-mode {
+    background-color: var(--loginpage-background-darkmode);
+}
+
+.login-pannel.dark-mode {
+    background-color: var(--loginpannel-background-darkmode);
+    box-shadow: 2px 2px 7px rgb(97, 97, 97);
+    color: white;
+}
+
+.login-pannel.dark-mode input {
+    background-color: #747474;
+    color: #e0e0e0;
+}
+
+.login-pannel.dark-mode .btn:hover {
+    box-shadow: 1px 1px 1px rgb(44, 44, 45);
+}
+
+.navbar.dark-mode {
+    background-color: var(--navbar-background-darkmode);
+    box-shadow: 0 0 4px rgb(75, 75, 75);
+}
+
+.navbar.dark-mode .item a {
+    color: var(--navbar-color-darkmode);
+}
+
+.navbar.dark-mode .item:hover {
+    background-color: var(--navbar-background-hover-darkmode);
+}
+
+.navbar.dark-mode .dropdown .title {
+    color: var(--navbar-color-darkmode);
+    background-color: var(--navbar-background-darkmode);
+}
+
+.navbar.dark-mode .dropdown .title:hover {
+    background-color: var(--navbar-background-hover-darkmode);
+}
+
+.navbar.dark-mode .dropdown-menu .sub-item {
+    color: var(--subitem-color-darkmode);
+    background-color: var(--subitem-background-darkmode);
+}
+
+.navbar.dark-mode .dropdown-menu .sub-item:hover {
+    background-color: var(--subitem-background-hover-darkmode);
+}
+
+.darkmode-toggle.dark-mode .checkbox-label{
+    box-shadow: 0px 0px 4px rgb(222, 219, 187);;
+}
+
+.hamburger.dark-mode .bar{
+    background-color: #e0e0e0;
+}
+
+.hamburger-menu.dark-mode {
+    box-shadow: 2px 2px 3px rgb(101, 101, 101);
+}
+
+.hamburger-menu.dark-mode .item {
+    background-color: var(--navbar-background-darkmode);
+}
+
+.hamburger-menu.dark-mode .dropdown a:hover {
+    background-color: var(--navbar-background-hover-darkmode);
+}
+
+.hamburger-menu.dark-mode .dropdown:hover .dropdown-check {
+    background-color: var(--navbar-background-hover-darkmode);
+}
+
+.modal.dark-mode {
+    box-shadow: 2px 2px 7px rgb(97, 97, 97);
+}
+.modal.dark-mode .modal-content{
+    background-color: var(--loginpannel-background-darkmode);
+    color: white;
+}
+
+.modal.dark-mode input {
+    background-color: #747474;
+    color: #e0e0e0;
+}
+
+.modal.dark-mode .btn:hover {
+    box-shadow: 1px 1px 1px rgb(44, 44, 45);
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/darkmode.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/hamburger.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="https://tensoract.io/">
+                    <img src="https://tensoract.io/images/logo-light.svg" alt="logo">
+                </a>
+            </div>
+            <ul class="navbar-menu">
+                <li class="item"><a href="">Home</a></li>
+                <li class="dropdown">
+                    <a class="title" href="">Product</a>
+                    <div class="dropdown-menu">
+                        <a class="sub-item" href="">Link 1</a>
+                        <a class="sub-item" href="">Link 2</a>
+                        <a class="sub-item" href="">Link 3</a>
+                    </div>
+                </li>
+                <li class="item"><a href="">Blogs</a></li>
+                <li class="item"><a href="">About Us</a></li>
+                <li class="item"><a href="">Contact</a></li>
+            </ul>
+            <div class="toggle-container">
+                <div class="darkmode-toggle">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                <div class="hamburger-toggle">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="hamburger-menu">
+                        <li class="item"><a href="">Home</a></li>
+                        <li class="dropdown">
+                            <a class="title" href="">Product</a>
+                            <input type="checkbox" class="dropdown-check">
+                            <div class="dropdown-menu">
+                                <a class="sub-item">Link 1</a>
+                                <a class="sub-item">Link 2</a>
+                                <a class="sub-item">Link 3</a>
+                            </div>
+                        </li>
+                        <li class="item"><a href="">Blogs</a></li>
+                        <li class="item"><a href="">About Us</a></li>
+                        <li class="item"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="login-pannel">
+            <p>Sign In</p>
+            <div class="username-container">
+                <input type="text" class="username-input" placeholder="Email or Phone Number">
+                <div class="username-error">Error</div>
+            </div>
+            <div class="password-container">
+                <input type="password" class="password-input" placeholder="Password">
+                <div class="password-error">Error</div>
+                <div class="display-btn-container">
+                    <button class="display-btn">Show</button>
+                </div>
+            </div>  
+            <a class="forgot-password">Forgot password?</a>
+            <button class="btn" id="submit-btn">Sign In</button>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Enter your email or phone number to reset password</p>
+              <div class="username-container">
+                <input type="text" class="username-input" placeholder="Email or Phone Number">
+                <div class="username-error">Error</div>
+            </div>
+              <button class="btn" id="resetpass-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

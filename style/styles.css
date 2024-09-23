@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+.login-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--loginpage-background);
+}
+
+.login-pannel {
+    position: relative;
+    width: 400px;
+    height: 420px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 2px 2px 7px rgb(201, 200, 200);
+    background-color: var(--loginpannel-background);
+}
+
+.login-pannel p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.username-container, .password-container{
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.username-error, .password-error {
+    position: absolute;
+    top: 110%;
+    color: var(--inputerror-color);
+    margin-left: 2%;
+    display: none;
+    font-size: 0.75rem;
+}
+
+input {
+    font-size: 0.9rem;
+    height: 40px;
+    padding: 3px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(180, 180, 180);
+    width: 100%;
+}
+
+input:focus {       
+    border: transparent;
+    outline: 2px solid var(--formbutton-color-hover);   
+    box-shadow: 1px 1px 2px rgb(56, 117, 178);
+}
+
+.display-btn-container {
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    font-weight: 600;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.display-btn {
+    font-weight: 600;
+    color: var(--formbutton-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: none;
+}
+
+.display-btn:hover {
+    cursor: pointer;
+    color: var(--formbutton-color-hover);
+}
+
+.display-btn:active {
+    color: var(--formbutton-color-active);
+    text-shadow: 1px 1px 4px #cacaca;
+}
+
+.forgot-password {
+    margin-bottom: 10%;
+    margin-left: 2%;
+    font-size: 0.9rem;
+    color: var(--formbutton-color);
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn {
+    height: 40px;
+    border: none;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--formbutton-color);
+}
+
+.btn:hover {
+    background-color: var(--formbutton-color-hover);
+    box-shadow: 1px 1px 1px rgb(173, 182, 192);
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: var(--formbutton-color-active);
+    border: 1px solid rgb(68, 165, 239);
+}
+
+
+input[type="password"]::-ms-reveal {
+    display: none; 
+}
+
+input[type="password"]::-webkit-inner-spin-button {
+    display: none;
+}   
+
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .hamburger-menu.active {
+        display: block;
+    }
+    .toggle-container {
+        width: 100px;
+        justify-content: space-between;
+    }
+    .modal-content {
+        margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .login-pannel {
+        width: 300px;
+        height: 340px;
+        padding: 20px;
+        margin: 0 15px;
+    }
+    .login-pannel p {
+        font-size: 1.5rem;
+        margin-top: 7px;
+        margin-bottom: 15px;
+    }
+    .login-pannel input {
+        font-size: 0.8rem;
+    }
+    .forgot-password {
+        font-size: 0.8rem;
+    }
+    .username-error, .password-error {
+        font-size: 0.65rem;
+    }
+    .modal-content {
+        font-size: 0.8rem;
+    }
+    .modal-content p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
